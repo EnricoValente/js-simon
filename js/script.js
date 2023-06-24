@@ -19,10 +19,22 @@ while(numbers.length < 5) {
         numbers.push(oneNumber);
         
     }
-
+    
+    
 }
 
 console.log(numbers)
+
+document.querySelector('.container').innerHTML=numbers
+
+
+
+setTimeout(function () {
+    
+    
+}, 30*1000)
+
+
 
 
 
