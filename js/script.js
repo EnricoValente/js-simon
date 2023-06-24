@@ -25,12 +25,20 @@ while(numbers.length < 5) {
 
 console.log(numbers)
 
-document.querySelector('.container').innerHTML=numbers
+const box=document.querySelector('.container');
+box.innerHTML=numbers;
 
 
 
 setTimeout(function () {
-    
+
+    box.style.display = 'none'
+
+    const firstNumber = parseInt(prompt('digita un numero'));
+    const secondNumber = parseInt(prompt('digita un numero'));
+    const thirdNumber = parseInt(prompt('digita un numero'));
+    const fourthNumber = parseInt(prompt('digita un numero'));
+    const fifthNumber = parseInt(prompt('digita un numero'));
     
 }, 30*1000)
 
