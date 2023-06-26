@@ -33,7 +33,7 @@ setTimeout(function () {
 
     const usernumberArray = [];
 
-    for (let index = 0; index < 5; index++) {
+    for (let i = 0; i < 5; i++) {
         const userNumber =parseInt(prompt('Inserisci 5 numeri'));
         console.log(userNumber);
         usernumberArray.push(userNumber);
@@ -41,6 +41,17 @@ setTimeout(function () {
 
     }    
     console.log(usernumberArray);
+
+    for (let index = 0; index < numbers.length; index++) {
+        console.log(numbers[index], ' ',usernumberArray[index]);
+
+        if (numbers[index] == usernumberArray[index]) {
+
+            document.querySelector('.results').innerHTML += `Hai indovinato il numero in posizione ${index} che è ${numbers[index]} `
+            
+        }
+        
+    }
     
 }, 30*1000)
 
