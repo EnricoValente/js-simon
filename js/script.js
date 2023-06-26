@@ -31,11 +31,16 @@ setTimeout(function () {
 
     box.style.display = 'none'
 
-    const firstNumber = parseInt(prompt('digita un numero'));
-    const secondNumber = parseInt(prompt('digita un numero'));
-    const thirdNumber = parseInt(prompt('digita un numero'));
-    const fourthNumber = parseInt(prompt('digita un numero'));
-    const fifthNumber = parseInt(prompt('digita un numero'));
+    const usernumberArray = [];
+
+    for (let index = 0; index < 5; index++) {
+        const userNumber =parseInt(prompt('Inserisci 5 numeri'));
+        console.log(userNumber);
+        usernumberArray.push(userNumber);
+    
+
+    }    
+    console.log(usernumberArray);
     
 }, 30*1000)
 
