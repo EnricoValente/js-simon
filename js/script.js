@@ -13,17 +13,14 @@
 
 const numbers = [];
 
-while(numbers.length < 5) {
-    const oneNumber = getRandomNumber(1, 5);
-    if (!numbers.includes(oneNumber)) {
-        numbers.push(oneNumber);
-        
-    }
-    
-    
+for(let i = 0; i< 5; i++ ){
+    const oneNumber=getRandomNumber(1,100);
+    console.log(oneNumber);
+    numbers.push(oneNumber);
 }
 
-console.log(numbers)
+console.log(numbers);
+
 
 const box=document.querySelector('.container');
 box.innerHTML=numbers;
